@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Agenda de Contatos </title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <style>
+            html{
+                height: 100%;
+            }
+            body{
+                background: url('img/dark-blue-background.jpg')
+                no-repeat center fixed;
+                background-size: cover;
+                height: 100%;
+                overflow-x: hidden;
+            }
+        </style>     
+    </head>
+    <body>
+        <div class="row h-100 align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm"></div>
+                    <div class="col-sm-6">
+                       <div class="card">
+                            <div class="card-header bg-white">
+                                <img src="img/logo.jpg" alt="Logo da pagina" style="width: 100%;">
+                            </div>
+                            <div class="card-body">
+                                <form method="POST" id="login" action="login.php">
+                                    <div class="form-group">
+                                        <div class="row mt-3">
+                                            <div class="col-sm-2 " >
+                                                <label for="mailusuario">E-mail:</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="email" name="email" class="form-control" id="mailusuario" placeholder="Digite o seu E-mail" size="50" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row mt-3">
+                                            <div class="col-sm-2">
+                                                <label for="senhaUsuario"> Senha: </label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="password" name="senha"  class="form-control" size="50" id="senhaUsuario" placeholder="Digite a sua senha" required>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <button id="entrarLogin" type="submit" class="btn btn-primary btn-block btn-lg" >Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <a href="novousuario.html" class="btn btn-success btn-block">Não sou cadastrado </a>
+                                    </div>
+                                    <div class="col-sm">
+                                        <button class="btn btn-warning btn-block" id="esquecisenha">Esqueci a Senha</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
